@@ -76,16 +76,20 @@ header {
   margin: 2rem 0 0.5rem;
 }
 
-.pendulum span {
+span {
   border: 1px solid #9d9b9bb9;
   border-radius: 5rem;
   color: grey;
   padding: 8px;
 }
 
+.horizontal-breaks {
+  display: none;
+}
+
 .all-images {
   display: grid;
-  margin: 0 5rem;
+  padding: 0 5rem;
   column-gap: 10px;
   justify-content: space-around;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -156,11 +160,28 @@ footer p {
 
   .button-2 {
     margin-top: 1rem;
+    padding: 1rem 2.7rem;
+  }
+
+  .pendulum {
+    display: none;
+  }
+  .horizontal-breaks {
+    display: flex;
+    margin: 3rem 0;
+  }
+
+  .horizontal-line {
+    width: 35%;
+    height: 0;
+    border-top: 1px inset #9d9b9bb9;
+    margin: auto;
   }
 
   .all-images {
     display: block;
-    margin: 0 5rem;
+    padding: 0 2rem;
+    margin-top: 3rem;
   }
 
   .all-images img {
@@ -172,26 +193,29 @@ footer p {
     margin-bottom: 1rem;
   }
   article p {
-    padding: 3rem 5rem;
+    padding: 0 2rem;
     color: grey;
   }
 
   footer {
     display: block;
-    padding: 3rem 2rem;
+    padding: 2rem;
     background-image: linear-gradient(
         rgba(72, 146, 166, 0.8),
         rgba(72, 146, 166, 0.8)
       ),
       url(./assets/mobile/image-footer.jpg);
   }
-  .footer-button {
-    background-color: #8460b3;
-    padding: 1rem 2rem;
-    margin-left: 8rem;
-    border-radius: none;
+
+  footer p {
+    padding: 0 1rem;
   }
-}
+
+  .footer-button {
+    margin: 0;
+    margin-left: 6rem;
+  }
+
 
 @media (min-width: 577px) and (max-width: 991px) {
   header {
