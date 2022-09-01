@@ -199,6 +199,7 @@ footer p {
 
   footer {
     display: block;
+    text-align: center;
     padding: 2rem;
     background-image: linear-gradient(
         rgba(72, 146, 166, 0.8),
@@ -210,12 +211,7 @@ footer p {
   footer p {
     padding: 0 1rem;
   }
-
-  .footer-button {
-    margin: 0;
-    margin-left: 6rem;
-  }
-
+}
 
 @media (min-width: 577px) and (max-width: 991px) {
   header {
@@ -256,4 +252,5 @@ footer p {
     margin-left: 19rem;
     margin-top: 2rem;
   }
+}
 }
